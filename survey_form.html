@@ -1,0 +1,45 @@
+<!-- File: survey_form.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Survey Form</title>
+</head>
+<body>
+    <h1>House Survey Form</h1>
+    <h2>House Owner Details:</h2>
+    <form action="/submit_survey" method="post">
+        <label for="owner_name">Name:</label>
+        <input type="text" id="owner_name" name="owner_name" required><br><br>
+
+        <label for="owner_dob">Date of Birth:</label>
+        <input type="date" id="owner_dob" name="owner_dob" required><br><br>
+
+        <label for="owner_gender">Gender:</label>
+        <select id="owner_gender" name="owner_gender" required>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select><br><br>
+
+        <label for="owner_identity_proof">Identity Proof Number:</label>
+        <input type="text" id="owner_identity_proof" name="owner_identity_proof" required><br><br>
+
+        <label for="owner_education">Education Level:</label>
+        <select id="owner_education" name="owner_education" required>
+            <option value="High School">High School</option>
+            <option value="Bachelor's Degree">Bachelor's Degree</option>
+            <option value="Master's Degree">Master's Degree</option>
+        </select><br><br>
+
+        <label for="owner_occupation">Occupation:</label>
+        <input type="text" id="owner_occupation" name="owner_occupation" required><br><br>
+
+        <label for="owner_age">Age:</label>
+        <input type="text" id="owner_age" name="owner_age" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
